@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_height="60dp"
+	android:layout_width="60dp"
+	android:gravity="center_horizontal">
+	<ImageButton android:id="@+id/menuicon"
+		android:layout_height="60dp" android:layout_width="60dp"
+		android:gravity="center_horizontal" 
+		android:layout_alignParentBottom="true" />
+	<TextView android:id="@+id/menuname"
+		android:layout_height="60dp"
+		android:layout_width="60dp" android:singleLine="true"
+		android:textSize="12dp"  android:textColor="#ff000000"
+		android:paddingTop="40dp" android:gravity="center_horizontal"
+		android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<LinearLayout android:layout_alignParentBottom="true"
+		android:id="@+id/libsb"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:id="@+id/libsadd" android:text="添加库"
+			android:layout_weight="2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Button android:id="@+id/libscancel" android:text="关闭"
+			android:layout_weight="2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+  <ExpandableListView  
+		android:layout_above="@id/libsb"
+		android:layout_alignParentTop="true"
+        android:id="@+id/expandableListView"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"/>  
+</RelativeLayout>
+

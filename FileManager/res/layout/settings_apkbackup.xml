@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/stapkbp"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:id="@+id/widget29" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="APK备份目录"
+		android:textSize="20px" android:textColor="#ffffffff">
+	</TextView>
+	<TextView android:id="@+id/apkbackuppath" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="TextView"
+		android:textColor="#ffa6b1b6">
+	</TextView>
+</LinearLayout>

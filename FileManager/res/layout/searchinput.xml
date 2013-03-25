@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<EditText android:id="@+id/searchedit"
+		android:layout_alignParentTop="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:hint="输入关键字"
+	></EditText>
+	<CheckBox android:id="@+id/searchcase"
+		android:text="大小写敏感"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/searchedit"
+		android:layout_alignParentLeft="true"></CheckBox>
+	
+	<CheckBox android:id="@+id/searchall"
+		android:text="完全匹配"
+		android:layout_below="@id/searchcase"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"></CheckBox>
+	
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_below="@id/searchall"
+		android:layout_height="wrap_content">
+		<Button android:id="@+id/searchok"
+			android:text="@string/ok"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Button android:id="@+id/searchcancel"
+			android:text="@string/cancel"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</RelativeLayout>

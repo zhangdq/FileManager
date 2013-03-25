@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView 
+	    android:id="@+id/copydialog_message" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"/> 
+  	<ListView 
+	    android:id="@android:id/list" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content" 
+	    android:drawSelectorOnTop="false" />
+	<CheckBox 
+		android:id="@+id/copydialog_checkbox"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" 
+  		android:text="以同样方式处理后面的文件"/>	
+</LinearLayout>

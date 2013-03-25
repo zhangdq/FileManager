@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.xjf.filedialog" android:versionCode="501" android:versionName="1.5">
+	<!-- android:theme="@android:style/Theme.Dialog" 
+		android:screenOrientation="portrait" 
+		-->
+	<application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="false">
+		<activity android:name=".FileManager"
+			android:configChanges="keyboardHidden|orientation|navigation"
+			android:screenOrientation="portrait" 
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".XPackageManager" android:label="@string/app_name">
+			<intent-filter>
+			<action android:name="com.xjf.apk.EDIT" />
+			<category android:name="android.intent.category.DEFAULT" />>
+			</intent-filter>
+		</activity>
+
+
+		<service android:name=".CopyFileService" android:enabled="true" />
+	</application>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="8" android:maxSdkVersion="9"></uses-sdk>
+
+</manifest> 

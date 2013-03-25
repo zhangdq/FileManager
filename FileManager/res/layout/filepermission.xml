@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView   	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent" >
+<TableLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:stretchColumns="1">
+  	<TableRow >
+  		<TextView android:id="@+id/permessage"
+		  	android:layout_width="fill_parent"
+		  	android:textColor="#ffffffff"
+		  	android:textStyle="bold"
+		  	android:layout_height="fill_parent"
+		  	android:gravity="fill"
+		  	android:layout_span="4"
+		  	android:padding="10dip" />
+	</TableRow>
+	
+	<View android:layout_height="2dip" android:background="#ff4791ff" />
+	<TableRow >
+		<TextView
+			android:text="修改文件权限.对SD卡的文件可能无效, 非SD卡文件可能要root"
+			android:layout_width="fill_parent"
+		  	android:textColor="#ff00ff00"
+		  	android:textStyle="bold"
+		  	android:layout_height="fill_parent"
+		  	android:gravity="fill"
+		  	android:layout_span="4"
+		  	android:padding="10dip" >
+		</TextView>
+	</TableRow>
+	
+	<TableRow>		  	
+  		<TextView android:id="@+id/peruser"
+  			android:text="所有者: "
+		  	android:layout_width="fill_parent"
+		  	android:textColor="#ffffffff"
+		  	android:textStyle="bold"
+		  	android:layout_height="fill_parent"
+		  	android:gravity="fill"
+		  	android:layout_span="1"
+		  	android:padding="10dip" /> 	
+	  	<Spinner android:id="@+id/perusersp" 
+	  		android:padding="10dip"
+		  	android:layout_width="fill_parent" 
+		  	android:layout_height="fill_parent">
+	  	</Spinner>
+	</TableRow>
+	
+	<TableRow>				  			 
+  		<TextView android:id="@+id/pergroup"
+  			android:text="群组: "
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="fill_parent"
+		  	android:gravity="fill"
+		  	android:textColor="#ffffffff"
+		  	android:textStyle="bold"
+		  	android:layout_span="1"
+		  	android:padding="10dip"/>
+  		<Spinner android:id="@+id/pergoupsp"
+		  	android:padding="10dip"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="fill_parent"/>
+  	</TableRow>
+  	
+  	<TableRow >
+  		<TextView android:id="@+id/perohters"
+  			android:text="其它: "
+		  	android:padding="10dip"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="fill_parent"
+		  	android:gravity="fill"
+		  	android:textColor="#ffffffff"
+		  	android:layout_span="1"
+		  	android:textStyle="bold"/>	
+  		<Spinner android:id="@+id/perotherssp"
+		  	android:padding="10dip"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="fill_parent"/>
+  	</TableRow>
+  	
+  	<TableRow >
+  		<CheckBox android:id="@+id/perdirectory"
+  			android:text="如果是目录,则对目录下所有文件设置同样权限(有些系统命令可能不支持)"
+  			android:layout_span="4"/>
+  	</TableRow>
+</TableLayout>
+</ScrollView>
